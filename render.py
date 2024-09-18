@@ -48,7 +48,7 @@ calendar_raw = """
 
 slides_raw = """
       a(href="%%%SLIDES%%%",target="_blank").btn.btn-primary
-        | #[i.bi.bi-easel3-fill] Slides"""
+        | #[i.bi.bi-easel3-fill] Paper"""
 
 calendar_raw_upcoming = """
     a(href="%%%CALENDAR%%%",target="_blank").btn.btn-primary.mb-md-3.w-100
@@ -56,7 +56,7 @@ calendar_raw_upcoming = """
 
 slides_raw_upcoming = """
     a(href="%%%SLIDES%%%",target="_blank").btn.btn-primary.mb-md-3.w-100
-      | #[i.bi.bi-easel3-fill] Slides"""
+      | #[i.bi.bi-easel3-fill] Paper"""
 
 
 def render_talk(talk, upcoming=False, past=False):
@@ -134,16 +134,16 @@ def render_talk(talk, upcoming=False, past=False):
 
     # Eventually add slides link
     if slides and not upcoming:
-        output = output.replace('%%%PAPER%%%',
-                                slides_raw.replace('%%%PAPER%%%',
+        output = output.replace('%%%SLIDES%%%',
+                                slides_raw.replace('%%%SLIDES%%%',
                                                    slides_fname))
     elif slides and upcoming:
-        output = output.replace('%%%PAPER%%%',
-                                slides_raw_upcoming.replace('%%%PAPER%%%',
+        output = output.replace('%%%SLIDES%%%',
+                                slides_raw_upcoming.replace('%%%SLIDES%%%',
                                                             slides_fname))
         print('Slides found for talk', talk['Title'])
     else:
-        output = output.replace('%%%PAPER%%%', '')
+        output = output.replace('%%%SLIDES%%%', '')
 
     # Generate talk ID from the author using md5
     talk_id = hashlib.md5(talk['Name'].encode('utf-8')).hexdigest()
