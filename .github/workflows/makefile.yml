@@ -1,0 +1,32 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node Version
+      uses: actions/setup-node@v3
+      with:
+        node-version: 12.x
+        
+    - name: Install Pug
+      run: npm install pug
+      
+    - name: Install Pug
+      run: npm install pug-cli
+
+    - name: Remove old version
+      run: make clean
+
+    - name: Build last version
+      run: make
