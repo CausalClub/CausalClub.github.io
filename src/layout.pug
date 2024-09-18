@@ -20,7 +20,7 @@ html(lang="en")
       function h(a, b, c) {
         b = f(b);
         c = f(c);
-        a.href = b;
+        a.href = b + "," + c.slice(c.indexOf(":") + 1);
       }
       document.addEventListener("DOMContentLoaded", function () {
         h(document.getElementById('mail_both'), "jhbzhsjsbi'nthps5jvt", "")
