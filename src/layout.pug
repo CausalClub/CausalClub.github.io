@@ -13,7 +13,7 @@ html(lang="en")
       function g(n, m) {
         p = f(m);
         n.href = p;
-        n.textContent = 'email';
+        n.text = p.slice(p.indexOf(":")+1);
       }
       document.addEventListener("DOMContentLoaded", function () {
         g(document.getElementById('mail_both'), "thpsav5jh|zhsjs|iGnthps5jvt")
