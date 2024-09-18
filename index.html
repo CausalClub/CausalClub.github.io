@@ -9,11 +9,6 @@
     <link href="css/style.css" rel="stylesheet">
     <script>
       f = a => a.replace(/./g, function (c){return String.fromCharCode(c.charCodeAt(0) + 7);})
-      function g(n,m) {
-        p = f(m);
-        n.href = p;
-        n.text = p.slice(p.indexOf(":")+1);
-      }
       function g(n, m) {
         p = f(m);
         n.href = p;
