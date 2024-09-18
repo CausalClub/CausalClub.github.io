@@ -13,7 +13,7 @@
     .btn-group.btn-group-sm(role="group",aria-label="Commands").mt-1
       
       button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#talk-40f4f4662f9022ee542d7df917ef4bdd",aria-expanded="false",aria-controls="talk-40f4f4662f9022ee542d7df917ef4bdd")
-        | #[i.bi.bi-file-earmark-text-fill] Abstract
+        | #[i.bi.bi-card-text] Abstract
   .col-md-7
     p.abstract#talk-40f4f4662f9022ee542d7df917ef4bdd.collapse.mt-2
         | We view causality both as an extension of probability theory and as a study of what happens when one intervenes on a system, and argue in favour of taking Kolmogorov's measure-theoretic axiomatisation of probability as the starting point towards an axiomatisation of causality. To that end, we propose the notion of a causal space, consisting of a probability space along with a collection of transition probability kernels, called causal kernels, that encode the causal information of the space. Our proposed framework is not only rigorously grounded in measure theory, but it also sheds light on long-standing limitations of existing frameworks including, for example, cycles, latent variables and stochastic processes.
@@ -29,9 +29,9 @@
     .btn-group.btn-group-sm(role="group",aria-label="Commands").mt-1
       
       button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78",aria-expanded="false",aria-controls="talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78")
-        | #[i.bi.bi-file-earmark-text-fill] Abstract
+        | #[i.bi.bi-card-text] Abstract
       a(href="slides/A Practical Approach to Causal Inference over Time.pdf",target="_blank").btn.btn-primary
-        | #[i.bi.bi-easel3-fill] Paper
+        | #[i.bi.bi-file-earmark-text-fill] Paper
   .col-md-7
     p.abstract#talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78.collapse.mt-2
         | In this paper, we focus on estimating the causal effect of an intervention over time on a dynamical system. To that end, we formally define causal interventions and their effects over time on discrete-time stochastic processes (DSPs). Then, we show under which conditions the equilibrium states of a DSP, both before and after a causal intervention, can be captured by a structural causal model (SCM). With such an equivalence at hand, we provide an explicit mapping from vector autoregressive models (VARs), broadly applied in econometrics, to linear, but potentially cyclic and/or affected by unmeasured confounders, SCMs. The resulting causal VAR framework allows us to perform causal inference over time from observational time series data. Our experiments on synthetic and real-world datasets show that the proposed framework achieves strong performance in terms of observational forecasting while enabling accurate estimation of the causal effect of interventions on dynamical systems. We demonstrate, through a case study, the potential practical questions that can be addressed using the proposed causal VAR framework.
