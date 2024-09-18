@@ -17,7 +17,7 @@ raw = """
     .btn-group.btn-group-sm(role="group",aria-label="Commands").mt-1
       %%%CALENDAR%%%
       button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#%%%TALK_ID%%%",aria-expanded="false",aria-controls="%%%TALK_ID%%%"%%%DISABLED%%%)
-        | #[i.bi.bi-file-earmark-text-fill] Abstract%%%SLIDES%%%
+        | #[i.bi.bi-card-text] Abstract%%%SLIDES%%%
   .col-md-7
     p.abstract#%%%TALK_ID%%%.collapse.mt-2
         | %%%ABSTRACT%%%"""
@@ -48,7 +48,7 @@ calendar_raw = """
 
 slides_raw = """
       a(href="%%%SLIDES%%%",target="_blank").btn.btn-primary
-        | #[i.bi.bi-easel3-fill] Paper"""
+        | #[i.bi.bi-file-earmark-text-fill] Paper"""
 
 calendar_raw_upcoming = """
     a(href="%%%CALENDAR%%%",target="_blank").btn.btn-primary.mb-md-3.w-100
@@ -56,7 +56,7 @@ calendar_raw_upcoming = """
 
 slides_raw_upcoming = """
     a(href="%%%SLIDES%%%",target="_blank").btn.btn-primary.mb-md-3.w-100
-      | #[i.bi.bi-easel3-fill] Paper"""
+      | #[i.bi.bi-file-earmark-text-fill] Paper"""
 
 
 def render_talk(talk, upcoming=False, past=False):
