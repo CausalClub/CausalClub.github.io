@@ -2,5 +2,24 @@
   "dependencies": {
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6"
-  }
+  },
+  "name": "CausalClub",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CausalClub/CausalClub.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CausalClub/CausalClub.github.io/issues"
+  },
+  "homepage": "https://github.com/CausalClub/CausalClub.github.io#readme"
 }

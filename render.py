@@ -134,16 +134,16 @@ def render_talk(talk, upcoming=False, past=False):
 
     # Eventually add slides link
     if slides and not upcoming:
-        output = output.replace('%%%SLIDES%%%',
-                                slides_raw.replace('%%%SLIDES%%%',
+        output = output.replace('%%%PAPER%%%',
+                                slides_raw.replace('%%%PAPER%%%',
                                                    slides_fname))
     elif slides and upcoming:
-        output = output.replace('%%%SLIDES%%%',
-                                slides_raw_upcoming.replace('%%%SLIDES%%%',
+        output = output.replace('%%%PAPER%%%',
+                                slides_raw_upcoming.replace('%%%PAPER%%%',
                                                             slides_fname))
         print('Slides found for talk', talk['Title'])
     else:
-        output = output.replace('%%%SLIDES%%%', '')
+        output = output.replace('%%%PAPER%%%', '')
 
     # Generate talk ID from the author using md5
     talk_id = hashlib.md5(talk['Name'].encode('utf-8')).hexdigest()
