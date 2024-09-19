@@ -195,6 +195,9 @@ if __name__ == '__main__':
     past = [talk for talk in talks if dt.strptime(talk['Date'],
                                                   '%d/%m/%Y') <= now- timedelta(days=1)]
 
+    # Sort future talks by date
+    future.sort(key=lambda x: dt.strptime(x['Date'], '%d/%m/%Y'))
+
     # Assign upcoming
     if future and args.upcoming:
         upcoming = future[0]
