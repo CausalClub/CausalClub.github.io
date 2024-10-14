@@ -40,7 +40,7 @@ def create_calendar_link(seminar):
 def generate_email_content(seminar):
     subject = f"[Seminar] {seminar['Title']}"
     calendar_link = create_calendar_link(seminar)
-    body = f"""Dear Causal Clubers,
+    body = f"""Dear Causal Clubbers,
 
 We are pleased to invite you to our upcoming seminar:
 
@@ -50,7 +50,7 @@ We are pleased to invite you to our upcoming seminar:
 
 **Where:** {seminar['Room']}, Computer Science Department, University of Pisa
 
-**Join Teams Meeting:** {seminar['Meet']}
+**To join online:** {seminar['Meet']}
 
 **Title:** {seminar['Title']}
 

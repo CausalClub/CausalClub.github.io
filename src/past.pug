@@ -3,6 +3,24 @@
 
 .row.project
   .col-md-2.col-3
+    h3.mb-0 11th
+    h5.month.mb-0 October
+    p 15:00-16:00
+  .col-md-7.col-9
+    p.author #[span.me Isacco Beretta and Martina Cinquini]
+    h4.title.mb-1
+      | A Practical Approach to Causal Inference over Time
+    .btn-group.btn-group-sm(role="group",aria-label="Commands").mt-1
+      
+      button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78",aria-expanded="false",aria-controls="talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78")
+        | #[i.bi.bi-card-text] Abstract
+      a(href="slides/A Practical Approach to Causal Inference over Time.pdf",target="_blank").btn.btn-primary
+        | #[i.bi.bi-file-earmark-text-fill] Paper
+  .col-md-7
+    p.abstract#talk-4323033ddb0c0f1c6d4e2f6b9b3a3c78.collapse.mt-2
+        | In this paper, we focus on estimating the causal effect of an intervention over time on a dynamical system. To that end, we formally define causal interventions and their effects over time on discrete-time stochastic processes (DSPs). Then, we show under which conditions the equilibrium states of a DSP, both before and after a causal intervention, can be captured by a structural causal model (SCM). With such an equivalence at hand, we provide an explicit mapping from vector autoregressive models (VARs), broadly applied in econometrics, to linear, but potentially cyclic and/or affected by unmeasured confounders, SCMs. The resulting causal VAR framework allows us to perform causal inference over time from observational time series data. Our experiments on synthetic and real-world datasets show that the proposed framework achieves strong performance in terms of observational forecasting while enabling accurate estimation of the causal effect of interventions on dynamical systems. We demonstrate, through a case study, the potential practical questions that can be addressed using the proposed causal VAR framework.
+.row.project
+  .col-md-2.col-3
     h3.mb-0 26th
     h5.month.mb-0 July
     p 15:00-16:00
