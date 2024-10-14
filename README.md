@@ -1,1 +1,1 @@
-# causalityclub.github.io
+# causalclub.github.io
