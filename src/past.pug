@@ -3,6 +3,22 @@
 
 .row.project
   .col-md-2.col-3
+    h3.mb-0 18th
+    h5.month.mb-0 October
+    p 15:00-16:00
+  .col-md-7.col-9
+    p.author #[span.me Alberto Caron]
+    h4.title.mb-1
+      | Causal Active Planning in Model-Based Reinforcement Learning
+    .btn-group.btn-group-sm(role="group",aria-label="Commands").mt-1
+      
+      button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#talk-40f4f4662f9022ee542d7df917ef4bdd",aria-expanded="false",aria-controls="talk-40f4f4662f9022ee542d7df917ef4bdd")
+        | #[i.bi.bi-card-text] Abstract
+  .col-md-7
+    p.abstract#talk-40f4f4662f9022ee542d7df917ef4bdd.collapse.mt-2
+        | In this talk, I am going to present some results from our latest paper on the problem of sample efficient exploration in Model-Based Reinforcement Learning (MBRL). While most popular exploration methods in (MB)RL are “reactive” in nature, and thus inherently sample inefficient, we discuss the benefits of an “active” approach, where the agent selects actions to query novel states in a data-efficient way, provided that one can guarantee that regions of high epistemic, and not aleatoric, uncertainty are targeted. In order to ensure this, we consider classes of exploration bonuses based on “Bayesian surprise”, and demonstrate their desirable properties. The rest of the talk will be dedicated to presenting our latest, early stage, project that aims at extending this previous work to develop a “Causal Active Planning” framework for sample efficient and robust MBRL, where the goal is to expand this class of exploration bonuses to capture epistemic uncertainty around a (Local) Causal Graphical Model of the transition dynamics. By incorporating these measures as causal “intrinsic rewards” within a MBRL algorithm, we can enable the agent to (actively) learn a causal transition dynamics model. If this causal dynamics model is then consequently utilized for policy training, it should theoretically ensure that the learnt policy is more robust and generalizable (Richens & Everitt, 2024).
+.row.project
+  .col-md-2.col-3
     h3.mb-0 11th
     h5.month.mb-0 October
     p 15:00-16:00
