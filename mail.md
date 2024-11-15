@@ -1,21 +1,21 @@
-Subject: [Seminar] Sortability in Additive Noise Models
+Subject: [Seminar] A Causal framework for interpreting model representations
 
 Dear Causal Clubbers,
 
 We are pleased to invite you to our upcoming seminar:
 
-**Presenter:** Alexander Reisach (Université Paris Cité)
+**Presenter:** Emanuale Marconato (University of Pisa and University of Trento)
 
-**When:** 15/11/2024, 15:00-16:00 [[Add to Calendar](https://www.google.com/calendar/render?action=TEMPLATE&text=Seminar%3A%20Sortability%20in%20Additive%20Noise%20Models&dates=20241115T150000/20241115T160000&details=Presenter%3A%20Alexander%20Reisach%20%28Universit%C3%A9%20Paris%20Cit%C3%A9%29%0A%0A%20Join%20Teams%20Meeting%3A%20meet.google.com/vys-zbgc-qni&location=Sala%20Demo)]
+**When:** 22/11/2024, 15:00-16:00 [[Add to Calendar](https://www.google.com/calendar/render?action=TEMPLATE&text=Seminar%3A%20A%20Causal%20framework%20for%20interpreting%20model%20representations&dates=20241122T150000/20241122T160000&details=Presenter%3A%20Emanuale%20Marconato%20%28University%20of%20Pisa%20and%20University%20of%20Trento%29%0A%0A%20Join%20Teams%20Meeting%3A%20https%3A//meet.google.com/rqt-auvp-drf&location=Sala%20Demo)]
 
 **Where:** Sala Demo, Computer Science Department, University of Pisa
 
-**To join online:** meet.google.com/vys-zbgc-qni
+**To join online:** https://meet.google.com/rqt-auvp-drf
 
-**Title:** Sortability in Additive Noise Models
+**Title:** A Causal framework for interpreting model representations
 
 **Abstract:** 
-Causal graphical models encode causal relationships between variables, typically based on a directed acyclic graph (DAG). Structural causal models expand upon this by expressing the causal relationships as explicit functions, which allows for computing the effect of interventions and much more. We show that, in many common parameterizations using linear functions and additive noise, effects accumulate along the causal order. This property enables inferring the causal order from data simply by sorting by a suitable criterion. We introduce the concept of sortability to capture the magnitude of the phenomenon, and show that the accumulating effects can lead to unrealistic values and deterministic relationships. We discuss implications for existing results and future research based on the same model class.
+There is a growing interest in providing explanations of machine learning models using human-understandable concepts. This integration of concepts can alleviate model opacity due to neural networks opening new venues to design interpretable and trustworthy models. However a critical problem is ensuring that machine learning models successfully encode the human concepts in their representations in a correct manner. Specifically when can we assign names to machine representations and how well do their concepts align with ours? I will demonstrate how Causality and Causal Representation Learning can help formalize this problem offering a clear definition of what can be referred to as human-machine alignment. Throughout the presentation I will showcase examples of both successes and failures in models designed to integrate concepts into their representations.
 
 We look forward to seeing you at the seminar!
 
