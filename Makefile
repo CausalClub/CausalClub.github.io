@@ -1,10 +1,16 @@
-.PHONY: clean all
+# Makefile to update www/index.html when dependencies change
 
-all: index.html
+# Target file
+TARGET = www/index.html
 
+# Dependencies
+DEPENDENCIES = layout/* scripts/* static/* Seminars.csv
+
+# Rule to build the target
+$(TARGET): $(DEPENDENCIES)
+	bash scripts/render.sh
+
+# PHONY target to force rebuild
+.PHONY: clean
 clean:
-	rm -f index.html
-
-index.html: $(addprefix src/, index.pug layout.pug next.pug upcoming.pug past.pug) Seminars.csv render.py
-	python3 render.py -u Seminars.csv
-	npx pug --doctype html --pretty src/index.pug --out .
+	rm -f $(TARGET)

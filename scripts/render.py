@@ -128,7 +128,7 @@ def render_talk(talk, upcoming=False, past=False):
 
     # Check if the slides are available
     slides_fname = f'slides/{talk["Title"].replace(":","_")}.pdf'
-    slides = os.path.isfile(slides_fname)
+    slides = os.path.isfile('static/'+slides_fname)
     if not slides:
         print(f'No slides for "{talk["Title"]}"')
 
@@ -173,7 +173,8 @@ if __name__ == '__main__':
                         help='Render page for a specific date '
                              '(format: DD/MM/YYYY)')
     parser.add_argument('csv_filename', type=str,
-                        help='CSV file containing talks')
+                        help='CSV file containing talks',
+                        default='Seminars.csv')
     args = parser.parse_args()
 
     # Parse CSV file into a dictionary
@@ -187,7 +188,7 @@ if __name__ == '__main__':
     else:
         now = dt.strptime(args.date, '%d/%m/%Y')
 
-    # Filter talks 
+    # Filter talks
     #timedelta so if rendered the same day of a talk the talk is still upcoming
     talks = [talk for talk in talks if talk['Name']]
     future = [talk for talk in talks if dt.strptime(talk['Date'],
@@ -206,7 +207,7 @@ if __name__ == '__main__':
         upcoming = None
 
     # Render upcoming
-    with open('src/upcoming.pug', 'w') as f:
+    with open('layout/upcoming.pug', 'w') as f:
         if upcoming:
             f.write('.row.mt-4.mb-2\n')
             f.write('  h2 #[span.emoji 🚀] Upcoming\n')
@@ -215,7 +216,7 @@ if __name__ == '__main__':
             f.write('')
 
     # Render past talks
-    with open('src/past.pug', 'w') as f:
+    with open('layout/past.pug', 'w') as f:
         if past:
             f.write('.row.mt-4.mb-4\n')
             f.write('  h2 #[span.emoji ⌛️] Past Talks\n')
@@ -225,7 +226,7 @@ if __name__ == '__main__':
             f.write('')
 
     # Render future talks
-    with open('src/next.pug', 'w') as f:
+    with open('layout/next.pug', 'w') as f:
         if future:
             f.write('.row.mt-4.mb-4\n')
             f.write('  h2 #[span.emoji 🔮] Next Talks\n')

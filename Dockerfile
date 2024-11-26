@@ -17,14 +17,11 @@ RUN apt-get update && \
 WORKDIR /causalclub
 
 # Install dependencies
-COPY package.json ./
-RUN npm install
+COPY package.json package-lock.json ./
+RUN npm ci
 
-# Copy everything else
+# Copy the whole project to the container
 COPY . .
 
-# Make the website
-RUN make
-
-# Command should be run when the container starts to copy index.html to /output
-CMD cp index.html /output/index.html
+# Generate the website
+CMD ["make"]
