@@ -20,8 +20,8 @@ WORKDIR /causalclub
 COPY package.json package-lock.json ./
 RUN npm ci
 
-# Copy the whole project to the container
-COPY . .
+# Copy Makefile
+COPY Makefile ./
 
 # Generate the website
 CMD ["make"]

@@ -4,11 +4,11 @@
 TARGET = www/index.html
 
 # Dependencies
-DEPENDENCIES = layout/* scripts/* static/* Seminars.csv
+DEPENDENCIES = src/layout/* src/scripts/* src/static/* src/Seminars.csv
 
 # Rule to build the target
 $(TARGET): $(DEPENDENCIES)
-	bash scripts/render.sh
+	bash src/scripts/render.sh
 
 # PHONY target to force rebuild
 .PHONY: clean
