@@ -1,21 +1,21 @@
-Subject: [Seminar] A Causal framework for interpreting model representations
+Subject: [Seminar] Causal Optimal Transport of Abstractions
 
 Dear Causal Clubbers,
 
 We are pleased to invite you to our upcoming seminar:
 
-**Presenter:** Emanuale Marconato (University of Pisa and University of Trento)
+**Presenter:** Yorgos Felekis (University of Warwick)
 
-**When:** 22/11/2024, 15:00-16:00 [[Add to Calendar](https://www.google.com/calendar/render?action=TEMPLATE&text=Seminar%3A%20A%20Causal%20framework%20for%20interpreting%20model%20representations&dates=20241122T150000/20241122T160000&details=Presenter%3A%20Emanuale%20Marconato%20%28University%20of%20Pisa%20and%20University%20of%20Trento%29%0A%0A%20Join%20Teams%20Meeting%3A%20https%3A//meet.google.com/rqt-auvp-drf&location=Sala%20Demo)]
+**When:** 06/12/2024, 15:00-16:00 [[Add to Calendar](https://www.google.com/calendar/render?action=TEMPLATE&text=Seminar%3A%20Causal%20Optimal%20Transport%20of%20Abstractions&dates=20241206T150000/20241206T160000&details=Presenter%3A%20Yorgos%20Felekis%20%28University%20of%20Warwick%29%0A%0A%20Join%20Teams%20Meeting%3A%20https%3A//meet.google.com/mhy-bzfg-xtg&location=Sala%20Demo)]
 
 **Where:** Sala Demo, Computer Science Department, University of Pisa
 
-**To join online:** https://meet.google.com/rqt-auvp-drf
+**To join online:** https://meet.google.com/mhy-bzfg-xtg
 
-**Title:** A Causal framework for interpreting model representations
+**Title:** Causal Optimal Transport of Abstractions
 
 **Abstract:** 
-There is a growing interest in providing explanations of machine learning models using human-understandable concepts. This integration of concepts can alleviate model opacity due to neural networks opening new venues to design interpretable and trustworthy models. However a critical problem is ensuring that machine learning models successfully encode the human concepts in their representations in a correct manner. Specifically when can we assign names to machine representations and how well do their concepts align with ours? I will demonstrate how Causality and Causal Representation Learning can help formalize this problem offering a clear definition of what can be referred to as human-machine alignment. Throughout the presentation I will showcase examples of both successes and failures in models designed to integrate concepts into their representations.
+Causal abstraction (CA) theory establishes formal criteria for relating multiple structural causal models (SCMs) at different levels of granularity by defining maps between them. These maps have significant relevance for real-world challenges such as synthesizing causal evidence from multiple experimental environments learning causally consistent representations at different resolutions and linking interventions across multiple SCMs. In this talk Yorgos will present COTA, a method to learn abstraction maps from observational and interventional data without assuming complete knowledge of the underlying SCMs. In particular a multi-marginal Optimal Transport (OT) formulation was leveraged that enforces do-calculus causal constraints together with a cost function that relies on interventional information. COTA was thoroughly evaluated on both synthetic and real-world problems demonstrating clear advantages over non-causal independent and aggregated OT formulations. Additionally the method's efficiency was showcased as a data augmentation tool by comparing it to the state-of-the-art CA learning framework which assumes fully specified SCMs on a real-world downstream task.
 
 We look forward to seeing you at the seminar!
 
