@@ -1,19 +1,26 @@
-# causalclub.github.io
+# Causal Club
 
-## Local Development
+## Compile the Website
+
+### Local Development
 
 ```bash
 npm install
 python -r requirements.txt
-bash scripts/render.sh
+bash src/scripts/render.sh
 ```
 
-## Container
+### Container
 
 Docker/Podman instructions to update the website:
 
 ```bash
-podman build -t causalclub .
-podman run -v $(pwd)/www:/causalclub/www:Z -v $(pwd)/src:/causalclub/src:Z causalclub
+docker build -t causalclub .
+docker run -v $(pwd)/www:/causalclub/www:Z -v $(pwd)/src:/causalclub/src:Z causalclub
+```
+
+## Deploy the Website
+
+```bash
 rsync -avz --delete --exclude ".well-known" www/ causalclub:/web/
 ```
