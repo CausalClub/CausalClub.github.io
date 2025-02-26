@@ -22,5 +22,5 @@ docker run -v $(pwd)/www:/causalclub/www:Z -v $(pwd)/src:/causalclub/src:Z causa
 ## Deploy the Website
 
 ```bash
-rsync -avz --delete --exclude ".well-known" www/ causalclub:/web/
+rsync -avz --delete --exclude ".well-known" --exclude "stats" www/ causalclub:/web/
 ```
