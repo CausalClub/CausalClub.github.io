@@ -6,11 +6,7 @@ import os
 
 raw = """
 .row.project
-  .col-md-2.col-3
-    h3.mb-0 %%%DAY%%%
-    h5.month.mb-0 %%%MONTH%%%
-    p %%%HOURS%%%
-  .col-md-7.col-9
+  .col-md-6.col-9
     p.author #[span.me %%%AUTHOR%%%]
     h4.title.mb-1
       | %%%TITLE%%%
@@ -18,29 +14,33 @@ raw = """
       %%%CALENDAR%%%
       button.btn.btn-primary(type="button",data-bs-toggle="collapse",data-bs-target="#%%%TALK_ID%%%",aria-expanded="false",aria-controls="%%%TALK_ID%%%"%%%DISABLED%%%)
         | #[i.bi.bi-card-text] Abstract%%%SLIDES%%%
-  .col-md-7
+  .col-md-2.col-3.date
+    h3.mb-0 %%%DAY%%%
+    h5.month.mb-0 %%%MONTH%%%
+    p %%%HOURS%%%
+  .col-md-6
     p.abstract#%%%TALK_ID%%%.collapse.mt-2
         | %%%ABSTRACT%%%"""
 
 raw_upcoming = """
 .row.next
-  .col-md-7.col-8
-    p.author #[span.me %%%AUTHOR%%%]
-    h2.title.mb-0.mt-1
+  .col-md-6
+    h2.title.mb-1.mt-1
       | %%%TITLE%%%
-  .col-md-2.col-4
+    p.author #[span.me %%%AUTHOR%%%]
+  .col-md-2.date
     h1.day %%%DAY%%%
     h4.month.mb-0 %%%MONTH%%%
     p %%%HOURS%%%
-  .col-md-7.col-12.mt-sm-3.mt-lg-1
-      p
+  .col-md-6.mt-sm-3.mt-lg-1
+      p.abstract
         | %%%ABSTRACT%%%
-  .col-md-4.d-grid.gap-2.d-md-block
+  .col-md-2.d-grid.gap-2.d-md-block
     %%%CALENDAR%%%
     a(href="%%%MEET%%%").btn.btn-primary.mb-md-3.w-100
-      | #[i.bi.bi-camera-reels-fill] Live Streaming%%%SLIDES%%%
+      | #[i.bi.bi-camera-reels-fill]Streaming%%%SLIDES%%%
     a(href="https://goo.gl/maps/FL4qcbB3MnMXrYS28",target="_blank").btn.btn-primary.w-100
-      | #[i.bi.bi-geo-alt-fill] %%%ROOM%%%
+      | #[i.bi.bi-geo-alt-fill]Pisa CS Dept
       """
 calendar_raw = """
       a(href="%%%CALENDAR%%%",target="_blank").btn.btn-primary

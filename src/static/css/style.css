@@ -78,9 +78,6 @@ h1 {
   margin-bottom: -0.5rem !important;
 }
 
-a {
-  color: var(--clr-primary-a50);
-}
 
 .poster {
   width: 100%;
@@ -103,20 +100,30 @@ a {
   color: #FF6F00;
 }
 
-mark {
+mark, a, a:hover {
   background-color: var(--clr-primary-a0);
   color: white;
   padding-top: 1px;
   padding-bottom: 1px;
+  font-weight: 600;
 }
 
-.btn {
+.btn, .btn:active, .btn:focus {
   background-color: var(--clr-primary-a0);
   border-color: var(--clr-primary-a0);
 }
 
+.btn-primary:disabled {
+  background-color: var(--clr-surface-tonal-a20);
+  border-color: var(--clr-surface-tonal-a20);
+}
+
 .abstract {
-  color: #666666;
+  word-break: break-word;  
+  text-align: justify;  
+  text-justify: inter-character;    
+  hyphens: auto;  
+  hyphenate-limit-lines: 2;  
 }
 
 ul {
