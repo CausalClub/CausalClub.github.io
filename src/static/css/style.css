@@ -124,6 +124,7 @@ mark, a, a:hover {
   text-justify: inter-character;    
   hyphens: auto;  
   hyphenate-limit-lines: 2;  
+  text-rendering: optimizeLegibility;  
 }
 
 ul {
